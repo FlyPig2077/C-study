@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help</class>
+ <widget class="QMainWindow" name="help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>楷体</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>帮助</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>帮助</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string>1. 用户注册界面
+在帐号栏输入新用户的用户名，在密码栏及确认密码栏输入新用户密码以进行新用户的注册。按确定键提交，按取消键退出。
+	*新用户名不得与现有用户名重名
+	*密码栏及确认密码栏所输入密码须一致
+	*密码不得少于六位
+
+2. 用户登录界面
+在帐号栏输入用户名，在密码栏输入当前用户密码以进行现有用户的登录。按确定键提交，按取消键退出。
+	*输入的用户名须为现有用户名
+	*密码栏所输入密码须与当前用户密码一致
+
+3. 用户管理界面_注销
+在密码栏及确认密码栏输入当前用户密码以对注销进行授权。按确定键确认用户注销，按取消键清空。
+	*密码栏及确认密码栏所输入密码须一致
+
+4. 用户管理界面_修改密码
+在旧密码栏输入当前用户密码，在新密码栏及确认密码栏输入修改后的新密码。按确定键提交，按取消键清空。
+	*旧密码须与当前用户现密码相同
+	*新密码不得与原密码相同
+	*新密码栏及确认密码栏所输入密码须一致
+	*新密码不得少于六位
+
+5. 联系人管理_添加修改联系人
+i：添加
+选择添加功能，填写新联系人编号、姓名、类别、性别、电话号码、电子邮箱。按确定键提交，按取消键清空。
+	*新联系人编号不得与现有联系人编号重复
+	*
+ii：修改
+选择修改功能，输入需要进行修改的联系人编号，按刷新获取联系人现有信息，进行修改后按确定键提交，按取消键清空。
+	*
+
+6. 联系人管理_查询联系人
+按需勾选姓名、性别、类别约束条件，并填入搜索关键字，按查询发起查询。
+	*全不勾选则显示当前用户所有联系人
+
+7. 联系人管理_删除联系人
+在联系人编号栏填入需要进行删除的联系人编号，按删除键确认删除，按取消键清空。
+	*
+
+8. 联系人类别管理
+i：新建
+选择新建功能，按刷新键自动获取类别编号，在类别名称栏填写新类别名称，备注选填。按确定键提交，按取消键清空。
+	*新类别名称不得与现有类别名称相同
+ii：修改
+选择修改功能，在类别名称栏输入需要进行修改的类别名称，按确定键提交并在弹出的新窗口中填入新类别名；按取消键清空。
+	*修改后的类别名不得与原类别名或现有类别名相同
+iii：删除
+选择删除功能，在类别名称栏输入需要进行删除的类别名称，按确定键提交并在弹出的新窗口中确认是否进行删除；按取消键清空。
+	*</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>679</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
